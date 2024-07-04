@@ -4,9 +4,15 @@ import './App.css';
 import React,{ useState } from 'react';
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
 function App() {
-  const [display,setdisplay]=useState("");
+  const [display,setdisplay]=useState("none");
 function show(){
-  setdisplay("flex");
+  if(display=="none"){
+    setdisplay("flex");
+
+  }
+  else{
+    setdisplay("none");
+  }
 }
 function hide(){
   setdisplay("none");
@@ -84,28 +90,31 @@ function funcAll(){
   return (
     <> 
     <header>
-    <div class="left">
-        PORTFOLIO
-    </div>
+      <div className="top">
+        <div class="left">
+          PORTFOLIO
+        </div>
+        <div className="slidebar">
+          <a href="#" onClick={show} className='change2'><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul className="sidebar">
+            <a href="#">HOME</a> 
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICE</a> 
+            <a href="#">WORK</a>
+            <a href="#">RESUME</a>
+        </ul>
+      </div>
     <div className="right">
     <nav>
-        <ul className="sidebar" style={{display:display}} onMouseEnter={show} onMouseLeave={hide}>
+        <ul className="sidebar" style={{display:display}}>
             <li><a href="#">HOME</a></li> 
             <li><a href="#">ABOUT</a></li> 
             <li><a href="#">SERVICE</a></li> 
             <li><a href="#">WORK</a></li> 
-            <li><a href="#">RESUME</a></li> 
+            <li><a href="#">RESUME</a></li>
         </ul>
-        <ul>
-            <div className="change">
-            <li><a href="#">HOME</a></li> 
-            <li><a href="#">ABOUT</a></li> 
-            <li><a href="#">SERVICE</a></li> 
-            <li><a href="#">WORK</a></li> 
-            <li><a href="#">RESUME</a></li> 
-            </div>
-            <li className='change2'><a href="#" onClick={show}><i class="fa-solid fa-bars"></i></a></li>
-        </ul>
+
     </nav>
     </div>
 </header>
@@ -141,7 +150,7 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
 
       </div>
       <div className="bg">
-      <img src="ss.png" alt="error" className='photo'/>
+      <img src="" alt="error" className='photo'/>
       </div>
     </div>
 </div>
@@ -319,6 +328,87 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
 </div>
 )
 }
+<div className="page4">
+  <div className="left4">
+    <div className="div_left">
+      <i class="fa-solid fa-pencil"></i>
+      <div className="v_line">
+      </div>
+      <i class="fa-solid fa-pencil"></i>
+      <div className="v_line">
+      </div>
+      <i class="fa-solid fa-pencil"></i>
+    </div>
+    <div className="div_right">
+      <div className="page4_box">
+        <div className="year">
+          2017-2020
+        </div>
+      <div>Secondary Education</div>
+      <p>"I completed my Secondary education from rbse School of Jalore(Rajasthan) .</p>
+      <br />
+      <p>My 10th score is 89.67%.</p>
+      </div>
+      <div className="page4_box">
+        <div className="year">2021-2022</div>
+      <div>Senior Secondary Education</div>
+      <p>"I changed my school after completion of 10th class.My new school is also rbse school of Jalore(Raj.)"</p>
+      <br />
+      <p>My 12th score is 89.63%.</p>
+      </div>
+      <div className="page4_box">
+        <div className="year">2022-2023</div>
+      <div>Jee examination</div>
+      <p>"I done my jee prepration from jaipur(Allen coaching)."</p>
+      <br />
+      <p>My jee advanced rank is 4522 out of 1 million student.</p>
+      </div>
+    </div>
+  </div>
+  <div className="left4">
+    <div className="div_left">
+      <i class="fa-solid fa-pencil"></i>
+      <div className="v_line">
+      </div>
+      <i class="fa-solid fa-pencil"></i>
+      <div className="v_line">
+      </div>
+      <i class="fa-solid fa-pencil"></i>
+    </div>
+    <div className="div_right">
+    <div className="page4_box">
+      <div className="year">
+        2023-2027
+      </div>
+      <div>Higher Education(B.Tech)</div>
+      <p>"I pursuing B.Tech(4 year course) from IIT Ropar,my brach is CSE(computer science and engeneering)" </p>
+      <br />
+      <p>My CGPA is 7.47 .</p>
+    </div>
+    <div className="page4_box">
+      <div className="year">
+        2
+      </div>
+      <div></div>
+      <p>"I pursuing B.Tech() from IIT Ropar,my brach is CSE(computer science and engeneering)" </p>
+      <br />
+      <p>My current CGPA is 7.47 .</p>
+    </div>
+    <div className="page4_box">
+      <div className="year">
+        2023-2027
+      </div>
+      <div>Collage</div>
+      <p>"I pursuing B.Tech(4 year course) from IIT Ropar,my brach is CSE(computer science and engeneering)" </p>
+      <br />
+      <p>My current CGPS is 7.47 .</p>
+    </div>
+  
+  
+  
+    </div>
+  </div>
+</div>
 </>
 );
 }
