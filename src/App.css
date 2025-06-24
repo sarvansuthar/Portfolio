@@ -45,6 +45,9 @@ nav a{
 }
 header{
   width:100%;
+  position:sticky;
+  top:0;
+  background-color: white;
 }
  
 
@@ -78,6 +81,8 @@ a{
   height:70%;
   width:100%;
   display:flex;
+  padding-top: 5rem;
+
 
 }
 .main{
@@ -181,6 +186,7 @@ a{
   font-weight:600 ;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-top:11rem;
+  padding-top: 5rem;
 }
 .serv{
   color:orange;
@@ -260,7 +266,6 @@ a{
 @media screen and (max-width:1200px) and (min-width:800px) {
   .center{
     width:100%;
-    flex-direction: column;
     /* justify-content: center;
     align-items: center; */
 
@@ -283,10 +288,6 @@ a{
   }
   .outer_box{
     justify-content: center;
-  }
-  .boxes{
-    width:70%;
-    grid-template-columns: repeat(2,1fr);
   }
 }
 
@@ -318,7 +319,12 @@ a{
   .change{
     display:none;
   }
-  
+  .boxes{
+    width:70%;
+    grid-template-columns:repeat(2,1fr);
+  }
+  .center{
+  }
 }
 @media screen and (min-width:1000px){
   .change2{
@@ -390,10 +396,11 @@ a{
   color:white;
 }
 .page4{
-  margin-top:8rem;
+  margin-top:10rem;
   height:100%;
   width:100%;
   display: flex;
+  padding-bottom: 10rem;
 }
 .div_left i{
   height:3rem;
@@ -406,22 +413,27 @@ a{
   color:white;
 }
 .v_line{
-  height:10rem;
+  height:11.4rem;
   border-left:5px solid orange;
-  margin-left:20px;
+  margin-left:1.3rem;
+  margin-right:1.3rem;
+  padding-right: 0rem;
 }
 .left4{
-  margin-left:1rem;
+  margin-left:0rem;
   display:flex;
 }
 .page4_box{
-  height:11rem;
-  width:35rem;
-  border:1px solid rgb(134, 133, 133);
-  border-radius:10px;
-  padding:1rem;
-  margin-bottom:2rem;
+  max-width: 44vw;
+  width: 100%;
+  border: 1px solid rgb(134, 133, 133);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-right:1rem;
+
 }
+
 .page4_box div{
   font-size: 20px;
   font-weight: 500;
@@ -480,3 +492,36 @@ a{
   }
   
 }
+@media screen and (max-width: 600px) {
+  .page4 {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .page4_box {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .v_line {
+    display: none; /* optional: hide line if layout breaks */
+  }
+
+  .left4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div_left i {
+    margin-bottom: 10px;
+  }
+  .page4_box div {
+    font-size: 16px;
+  }
+
+  .page4_box .year {
+    font-size: 13px;
+  }
+}
+

@@ -89,8 +89,8 @@ function funcAll(){
 
   return (
     <> 
-    <header>
-      <div className="top">
+        <header>
+      <div className="top" >
         <div class="left">
           PORTFOLIO
         </div>
@@ -98,27 +98,27 @@ function funcAll(){
           <a href="#" onClick={show} className='change2'><i class="fa-solid fa-bars"></i></a>
         </div>
         <ul className="sidebar">
-            <a href="#">HOME</a> 
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICE</a> 
-            <a href="#">WORK</a>
-            <a href="#">RESUME</a>
+            <a href="#HOME">HOME</a> 
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#SERVICE">SERVICE</a> 
+            <a href="#WORK">WORK</a>
+            <a href="#RESUME">RESUME</a>
         </ul>
       </div>
     <div className="right">
     <nav>
         <ul className="sidebar" style={{display:display}}>
-            <li><a href="#">HOME</a></li> 
-            <li><a href="#">ABOUT</a></li> 
-            <li><a href="#">SERVICE</a></li> 
-            <li><a href="#">WORK</a></li> 
-            <li><a href="#">RESUME</a></li>
+            <li><a href="#HOME">HOME</a></li> 
+            <li><a href="#ABOUT">ABOUT</a></li> 
+            <li><a href="#SERVICE">SERVICE</a></li> 
+            <li><a href="#WORK">WORK</a></li> 
+            <li><a href="#RESUME">RESUME</a></li>
         </ul>
 
     </nav>
     </div>
 </header>
-<div class="center">
+<div class="center" id='HOME'>
     <div class="left2">
         <p className='welcome'>WELCOME !</p>
         <div class="main">
@@ -141,7 +141,7 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
         </a>
         <a href="https://www.geeksforgeeks.org/user/sutharsa5vhd/" className='icon'><img src="geeksforgeeks_icon.png" alt="" className='gfg'/></a>
         <a href="https://www.linkedin.com/in/sarvan-suthar-498b28296/"className='icon'><img src="icons8-linkedin.gif" alt="" className='a1' /></a>
-        <a href="https://www.instagram.com/sarv.an1209/?hl=en"className='icon'><img src="icons8-instagram.gif" alt="" className='a1' /></a>
+        <a href="https://codeforces.com/profile/sutharsarvan29"className='icon'><img src="codeforces.png" alt="" className='a1' /></a>
         <a href="https://github.com/sarvansuthar"className='icon'><img src="icons8-github.gif" alt="" className='a1'/></a>
         </div>
     </div>
@@ -154,8 +154,9 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
       </div>
     </div>
 </div>
+    
 {/* Page-2 start from here  */}
-<div className='page2_start'>
+<div className='page2_start' id='SERVICE'>
   <p>My</p>
   <p className='serv'>Services</p>
 </div>
@@ -228,7 +229,7 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
     </div>
   </div>
 </div>
-<div className='page2_start'>
+<div className='page2_start' id='WORK'>
   <p>My</p>
   <p className='serv'>Work</p>
 </div>
@@ -253,12 +254,13 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
   <>
   <div className="div1">
 <div className="img1">
-  <img src="https://img.freepik.com/premium-vector/team-specialists-is-working-creation-web-design-concept-teamwork-flat-2d-character-landing-page-concepts-web-design_130740-2275.jpg?ga=GA1.1.271726098.1719815295&semt=ais_user" alt="#" />
+  <img src="photo5.jpg" alt="#" />
+  <div className='D1'></div>
   
 
 </div>
 <div className="img2">
-<img src="https://img.freepik.com/premium-photo/person-is-using-laptop-with-screen-showing-time-9-30_1059430-93544.jpg?ga=GA1.1.271726098.1719815295&semt=ais_user" alt="" />
+<img src="https://www.w3care.com/images/uploads/blog/_listing/Website_Design_Inspiration.webp" alt="" />
 </div>
 </div>
 {more&&(
@@ -284,6 +286,7 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
 {more&&(
   <div className="img2">
   <img src="https://img.freepik.com/premium-photo/photo-laptop-tablet-surrounded-by-stationery-items_1055425-40971.jpg?ga=GA1.1.271726098.1719815295&semt=sph" alt="" />
+  
 </div>
 )}
   </>
@@ -294,21 +297,21 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
   <>
   <div className="div3">
   <div className="img1">
-    <img src="https://img.freepik.com/free-vector/marketing-consulting-concept-illustration_114360-9027.jpg?ga=GA1.1.271726098.1719815295&semt=sph" alt="" />
+    <img src="photo1.jpg" alt="" />
 
   </div>
   <div className="img2">
-    <img src="https://img.freepik.com/premium-photo/office-computer-desktop-computer-user-interface-web-design-computer-highdefinition-pictures_1028519-5213.jpg?ga=GA1.1.271726098.1719815295&semt=sph" alt="" />
+    <img src="photo2.jpg" alt="" />
   </div>
 </div>
 {more&&(
   <>
   
   <div className="img3">
-    <img src="https://img.freepik.com/premium-photo/3d-illustration-figma-graphic-design-web-design-black-white-black-background_617193-24.jpg?ga=GA1.1.271726098.1719815295&semt=sph" alt="" />
+    <img src="photo3.jpg" alt="" />
   </div>
   <div className="img4">
-    <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?ga=GA1.1.271726098.1719815295&semt=sph" alt="" />
+    <img src="photo4.jpg" alt="" />
   </div>
   </>
 )}
@@ -342,26 +345,27 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
     <div className="div_right">
       <div className="page4_box">
         <div className="year">
-          2017-2020
+          2019-2020
         </div>
       <div>Secondary Education</div>
-      <p>"I completed my Secondary education from rbse School of Jalore(Rajasthan) .</p>
+      <p>I completed my secondary education at an RBSE-affiliated school in Jalore, Rajasthan.</p>
       <br />
-      <p>My 10th score is 89.67%.</p>
+      <p>"I secured 89.67% in my 10th-grade board examination."</p>
       </div>
       <div className="page4_box">
         <div className="year">2021-2022</div>
       <div>Senior Secondary Education</div>
-      <p>"I changed my school after completion of 10th class.My new school is also rbse school of Jalore(Raj.)"</p>
+      <p>After completing my 10th grade, I changed schools and continued my education at another RBSE-affiliated institution in Jalore, Rajasthan.</p>
       <br />
-      <p>My 12th score is 89.63%.</p>
+      <p>"I secured 89.63% in my 12th-grade board examination."</p>
       </div>
       <div className="page4_box">
         <div className="year">2022-2023</div>
       <div>Jee examination</div>
-      <p>"I done my jee prepration from jaipur(Allen coaching)."</p>
+      <p>I pursued my JEE preparation at Allen Coaching Institute, Jaipur.</p>
       <br />
-      <p>My jee advanced rank is 4522 out of 1 million student.</p>
+      <p>"I secured an All India Rank (AIR) of 4522 in JEE Advanced, out of approximately 1 million candidates."
+</p>
       </div>
     </div>
   </div>
@@ -378,37 +382,37 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
     <div className="div_right">
     <div className="page4_box">
       <div className="year">
-        2023-2027
+        2023-2024
       </div>
-      <div>Higher Education(B.Tech)</div>
-      <p>"I pursuing B.Tech(4 year course) from IIT Ropar,my brach is CSE(computer science and engeneering)" </p>
+      <div>Bachelor of Technology – 1st Year</div>
+      <p>"I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering at IIT Ropar. </p>
       <br />
-      <p>My CGPA is 7.47 .</p>
+      <p>"My cumulative GPA at the end of the first year stands at 7.45 (on a 10-point scale)."
+
+</p>
     </div>
     <div className="page4_box">
       <div className="year">
-        2
+        2024-2025
       </div>
-      <div></div>
-      <p>"I pursuing B.Tech() from IIT Ropar,my brach is CSE(computer science and engeneering)" </p>
+      <div>Bachelor of Technology – 2nd Year </div>
+      <p></p>
       <br />
-      <p>My current CGPA is 7.47 .</p>
+      <p>"By the end of my second year, my cumulative GPA improved to 7.51 (on a 10-point scale)."</p>
     </div>
     <div className="page4_box">
       <div className="year">
-        2023-2027
+        2025-2026
       </div>
-      <div>Collage</div>
-      <p>"I pursuing B.Tech(4 year course) from IIT Ropar,my brach is CSE(computer science and engeneering)" </p>
+      <div>Bachelor of Technology – 3rd Year </div>
+      <p></p>
       <br />
-      <p>My current CGPS is 7.47 .</p>
+      <p>"I will be entering my third year of the B.Tech program in July." </p>
     </div>
-  
-  
-  
     </div>
   </div>
 </div>
+
 </>
 );
 }
