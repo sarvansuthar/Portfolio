@@ -150,7 +150,7 @@ As a Computer Science student at IIT Ropar, I have developed strong programming 
 
       </div>
       <div className="bg">
-      <img src="" alt="error" className='photo'/>
+      <img src="photo7.png" alt="error" className='photo'/>
       </div>
     </div>
 </div>
