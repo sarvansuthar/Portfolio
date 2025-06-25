@@ -102,7 +102,7 @@ function funcAll(){
             <a href="#ABOUT">ABOUT</a>
             <a href="#SERVICE">SERVICE</a> 
             <a href="#WORK">WORK</a>
-            <a href="#RESUME">RESUME</a>
+            <a href="https://drive.google.com/file/d/1hfFUCde8LK0-bT96TgTn_6A0IbyZM-rq/view">RESUME</a>
         </ul>
       </div>
     <div className="right">
